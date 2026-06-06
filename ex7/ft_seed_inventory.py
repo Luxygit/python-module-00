@@ -1,7 +1,9 @@
+"""type hints"""
+
 
 def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
-    name = seed_type.capitalize()
-
+    """displaying different type data based on conditional comparison"""
+    name: str = seed_type.capitalize()
     if unit == "packets":
         print(f"{name} seeds: {quantity} packets available")
     elif unit == "grams":
